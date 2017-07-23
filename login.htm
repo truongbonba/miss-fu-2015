@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+
+	<title>Welcome</title>
+    <link href="login.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <br /><br /><br /><br /><br /><br />
+    <h1>Khám phá những bức ảnh đẹp nhất thế giới!</h1>
+    <br /><br />
+    <form id="form" name="form" action="index.htm" onsubmit="return doForm()">
+        <table width="440" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td colspan="2">
+                    <h3>Bạn phải đăng nhập trước khi bắt đầu!</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>Tên tài khoản</td>
+                <td><input type="text" name="name" id="name" /></td>
+                <td>(5 - 30)</td>
+            </tr>
+            <tr>
+                <td> Mật khẩu </td>
+                <td><input type="password" id="password" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <input id="login" type="submit" value="Đăng nhập"/>
+                    <input type="reset" name="reset" value="Làm lại" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <audio controls autoplay loop >
+        <source src="Pirate Kings sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
+<script>
+    function doForm(){
+        //Name cannot be empty
+    	var name = form.name.value;
+    	if(name == ""){
+    		alert("Bạn chưa nhập tên");
+            document.getElementById("name").focus();
+            return false;
+    	}
+        
+        // Name must has at 5 - 30 characters
+        if(name.length < 5) {
+            alert("Tên quá ngắn!!");
+            document.getElementById("name").focus();
+            return false;
+        }
+        if(name.length > 30) {
+            alert("Tên quá dài!");
+            document.getElementById("name").focus();
+            return false;
+        }        
+        
+        // Name must has only contains alphabel letters
+        var ck_name = /^[A-Za-z0-9]{5,30}$/;
+        if(!ck_name.test(name)) {
+            alert("Tên không được có ký tự đặc biệt");
+            document.getElementById("name").focus();
+            return false;
+        }
+        
+        //Code cannot be empty
+    	var password = form.password.value;
+    	if(password == ""){
+    		alert("Bạn chưa nhập mật khẩu");
+            document.getElementById("password").focus();
+            return false;
+   	    }
+        
+       	alert("Đăng nhập thành công!");
+        return true;
+    }
+</script>

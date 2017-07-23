@@ -1,0 +1,16 @@
+body {
+    color: white;
+	background-image: url("nature.jpg");
+    background-size: cover;
+    font-family: monospace;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+table {
+    border-spacing: 10px;
+}
+#login {
+    background-color: #00BFFF;
+}

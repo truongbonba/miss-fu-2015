@@ -1,0 +1,321 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+
+	<title>Bộ ảnh miss FU</title>
+    <link href="home.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <img src="cover.jpg" alt="cover" style="width: 100%;"/>
+    <table border="1">
+        <tr>
+            <th style="color: green; font-family: monospace;">
+                <img src="queen.jpg" width="80"/>
+                <h1> Top<br /> 13<br /> Miss</h1>
+            </th>
+            <td><div style="margin-left: 20px;">
+                <a href="#full" onclick="show('tram',12)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/1.jpg"/></a>
+                <a href="#full" onclick="show('phuong',12)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/2.jpg"/></a>
+                <a href="#full" onclick="show('nguyet',13)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/3.jpg"/></a>
+                <a href="#full" onclick="show('ha',17)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/4.jpg"/></a>
+                <a href="#full" onclick="show('anh',12)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/5.jpg"/></a>
+                <a href="#full" onclick="show('giang',13)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/6.jpg"/></a>
+                <a href="#full" onclick="show('huong',17)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/7.jpg"/></a>
+                <a href="#full" onclick="show('trang',15)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/8.jpg"/></a>
+                <a href="#full" onclick="show('nguyen',14)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/9.jpg"/></a>
+                <a href="#full" onclick="show('hong',17)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/10.jpg"/></a>
+                <a href="#full" onclick="show('lan',16)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/11.jpg"/></a>
+                <a href="#full" onclick="show('dau',16)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/12.jpg"/></a>
+                <a href="#full" onclick="show('attaa',20)"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/13.jpg"/></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <audio controls autoplay loop width="20" >
+                    <source src="River Flows In You.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    <table style="width: 100%; border: 1px solid; background-color: #FAEBD7;">
+        <tr>
+            <td><a id="full"> </td>
+            <td style="vertical-align: top;">
+                <a id="cmt">
+                <a style="background-color: #F0FFFF;" id="add1">
+                <a style="background-color: #F0FFFF;" id="add2">
+                <a style="background-color: #F0FFFF;" id="add3">
+                <a style="background-color: #F0FFFF;" id="add4">
+                <a style="background-color: #F0FFFF;" id="add5">
+                <a style="background-color: #F0FFFF;" id="add6">
+                <a style="background-color: #F0FFFF;" id="add7">
+                <a style="background-color: #F0FFFF;" id="add8">
+                <a style="background-color: #F0FFFF;" id="add9">
+                <a style="background-color: #F0FFFF;" id="add10">
+            </td>
+        </tr>
+    </table>
+    <a id="0">
+    <a id="1"> <a id="2"> <a id="3"> <a id="4"> <a id="5"> <a id="6"> <a id="7"> <a id="8"> <a id="9"> <a id="10">
+    <a id="11"> <a id="12"> <a id="13"> <a id="14"> <a id="15"> <a id="16"> <a id="17"> <a id="18"> <a id="19"> <a id="20">
+</body>
+</html>
+<script type="text/javascript">
+    var count = 1;
+    function show(who,max){
+        var text = "";
+        for(i=1;i<=20;i++){
+            document.getElementById("full").innerHTML = text;
+            document.getElementById(i).innerHTML = text;
+            document.getElementById("cmt").innerHTML = text;
+            if(i <= 10) document.getElementById("add" + i).innerHTML = text;
+            count = 1;
+        }
+
+        if(who=="tram"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">NGUYỄN NGỌC TRÂM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="tram.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="tram('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }
+        } else if(who=="phuong"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">ĐOÀN BÍCH PHƯƠNG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="phuong.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="phuong('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }  
+        } else if(who=="nguyet"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">TRIỆU MINH NGUYỆT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="nguyet.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="nguyet('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="ha"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">DOÃN THU HÀ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="ha.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="ha('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="anh"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">TRẦN BẢO ÁNH &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="anh.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="anh('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="giang"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">NGUYỄN THỊ HƯƠNG GIANG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="giang.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="giang('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="huong"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">ĐỖ VIỆT HƯƠNG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="huong.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="huong('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="trang"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">TRẦN THỊ HUYỀN TRANG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="trang.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="trang('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="nguyen"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">VŨ TÂY NGUYÊN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="nguyen.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="nguyen('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="hong"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">TRIỆU THỊ HỒNG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="hong.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="hong('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="lan"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">NGÔ HOÀNG LAN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="lan.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="lan('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="dau"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">ĐẬU THỊ VÂN ANH &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="dau.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="dau('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        } else if(who=="attaa"){
+            var them = '<h1 style="font-family: monospace; background-color:#FFE4E1;">GYIMAH AKUA ATTAA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                        + '<a href="attaa.htm" target="_blank" style="background-color:#00FFFF;">xem thêm >></a></h1>';
+            document.getElementById(0).innerHTML = them;
+            for(i=1;i<=max;i++){
+                text = '<img style="width:250px; height:250px; padding:2px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="attaa('+ i +')" src="images/' + who + i + '.jpg"/>';
+                document.getElementById(i).innerHTML = text;
+            }          
+        }
+    }
+    function comment(c) {
+        var com = document.getElementById(c).value;
+        if(com == ""){
+            alert("Bạn chưa viết gì cả!");
+            document.getElementById(c).focus();
+            return;
+        }
+        var add = '<br/><br/><i>You</i>: ' + com;
+        if(count <= 10){
+            document.getElementById("add" + count).innerHTML = add;
+            count++;
+        }else if(count > 10) alert("Không được spam! Bạn đã bị khóa comment!");
+    }
+    function bigImg(x) {
+        x.style.border = "solid 1px blue";
+    }
+    function normalImg(x) {
+        x.style.border = "solid 0px";
+    }
+    function tram(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'tram' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>NGUYỄN NGỌC TRÂM <br/> Ngày sinh: 13/05/1994 <br/> ( khóa 8 - kĩ thuật phần mềm ) <br/> Mã sinh viên: SE03041 <br/> Chiều cao: 155cm<br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='tram_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"tram_comment\")' />";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("tram_comment").focus();
+    }
+    function phuong(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'phuong' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>ĐOÀN BÍCH PHƯƠNG <br/> Ngày sinh: 23/03/1994 <br/> ( Khóa 8 - Quản trị kinh doanh )<br/> Mã sinh viên: SB01328 <br/> Chiều cao: 160cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='phuong_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"phuong_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("phuong_comment").focus();        
+    }
+    function nguyet(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'nguyet' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>TRIỆU MINH NGUYỆT <br/> Ngày sinh: 19/12/1993 <br/> ( khóa 7 - Quản trị kinh doanh )<br/> Mã sinh viên: SB01028 <br/> Chiều cao: 157cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='nguyet_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"nguyet_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("nguyet_comment").focus();        
+    }
+    function ha(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'ha' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>DOÃN THU HÀ <br/> Ngày sinh: 14/07/1995 <br/> Mã sinh viên: SB01447 <br/> ( Khóa 9 - Quản trị kinh doanh ) <br/> Chiều cao: 164cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='ha_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"ha_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("ha_comment").focus();        
+    }
+    function anh(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'anh' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>TRẦN BẢO ÁNH <br/> Ngày sinh: 07/06/1993 <br/> Mã sinh viên: SB01248 <br/> ( khóa 8 - tài chính ngân hàng ) <br/> Chiều cao: 165cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='anh_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"anh_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("anh_comment").focus();        
+    }
+    function giang(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'giang' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>NGUYỄN THỊ HƯƠNG GIANG <br/> Ngày sinh: 12/ 04/1993 <br/> Mã sinh viên: SB01198 <br/> ( khóa 7 - quản trị kinh doanh ) <br/> Chiều cao: 168cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='giang_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"giang_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("giang_comment").focus();        
+    }
+    function huong(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'huong' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>ĐỖ VIỆT HƯƠNG <br/> Ngày sinh: 21/02/1992 <br/> Mã sinh viên: SB01569 <br/> ( Khóa 9 - quản trị kinh doanh ) <br/> Chiều cao: 168cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='huong_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"huong_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("huong_comment").focus();        
+    }
+    function trang(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'trang' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>TRẦN THỊ HUYỀN TRANG <br/> Ngày sinh: 04/07/1995 <br/> Mã sinh viên: SE03531 <br/> ( khóa 9 - thiết kế đồ họa ) <br/> Chiều cao: 165cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='trang_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"trang_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("trang_comment").focus();        
+    }
+    function nguyen(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'nguyen' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>VŨ TÂY NGUYÊN <br/> Ngày sinh: 25/08/1996 <br/> Mã sinh viên: SB01767 <br/> <br/> ( Khóa 10 - tài chính ngân hàng ) Chiều cao: 159cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='nguyen_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"nguyen_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("nguyen_comment").focus();        
+    }
+    function hong(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'hong' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>TRIỆU THỊ HỒNG <br/> Ngày sinh: 23/08/1995 <br/> MSSV: SB01469 <br/> ( Khóa 9 - Quản trị kinh doanh ) <br/> Chiều cao: 1m70 <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='hong_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"hong_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("hong_comment").focus();        
+    }
+    function lan(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'lan' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>NGÔ HOÀNG LAN <br/> Ngày sinh: 26/02/1996 <br/> Mã sinh viên: SE04186 <br/> ( Khóa 10 - Kỹ thuật phần mềm ) <br/> Chiều cao: 164cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='lan_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"lan_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("lan_comment").focus();        
+    }
+    function dau(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'dau' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>ĐẬU THỊ VÂN ANH <br/> Ngày sinh: 17/01/1995 <br/> Mã sinh viên: SB01543 <br/> ( Khóa 9 - Tài chính ngân hàng ) <br/> Chiều cao: 160cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='dau_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"dau_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("dau_comment").focus();        
+    }
+    function attaa(i){
+        var text = '<img style="max-width:900px;" src="images/'+ 'attaa' + i +'.jpg"/>';
+        document.getElementById("full").innerHTML = text;
+        var info = "<br/><br/><br/>GYIMAH AKUA ATTAA <br/> Date of birth: 27/04/1994 <br/> Student roll: SB01590 <br/> ( khóa 9 - quản trị kinh doanh ) <br/> Height: 165cm <br/><br/><hr/>"
+        + "Your comment: <input type='text' name='comment' id='attaa_comment'/>"
+        + "<input type='button' value='Comment' onclick='comment(\"attaa_comment\")'/>";
+        document.getElementById("cmt").innerHTML = info;
+        document.getElementById("attaa_comment").focus();        
+    }
+</script>
